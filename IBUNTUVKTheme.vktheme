@@ -1,0 +1,586 @@
+//
+// variables
+//#0D0D0D
+$black:  #403f3a
+$black1: #403f3a
+$black2: #403f3a
+$gray: #4D4D4D
+$gray1: #ee8d66
+$gray2: #535353 //#535353
+$light-gray: #ddd
+$light-gray1: #eee
+$white: #fff
+
+$r: #f00
+$y: #ff0
+
+//
+// rules
+//
+base-fg: $light-gray1
+base-bg: $black2
+base-icon: $gray1
+base-icon-hover: $gray,60%
+gray-icon: $gray1
+gray-icon-hover: $gray1,70%
+gray-fg: $light-gray
+darkgray-fg: $light-gray
+bluegray-fg: $light-gray
+search-hl-bg: $gray1,40%
+user-name-fg: $light-gray
+
+#if LINUX
+  ubuntu-selection-bg: rgba(239, 118, 69, 0.99)
+  ubuntu-selection-fg: $black2
+#elif WINDOWS
+  win32-window-frame: $black1
+  win32-window-title-fg: $light-gray
+  win32-window-title-bg: $black1
+  win32-window-title-btn-fg: $white
+  win32-window-title-btn-hover-bg: $black2
+  win32-window-title-btn-active-bg: $black
+  win32-window-title-closebtn-hover-bg: #E81123
+  win32-window-title-closebtn-active-bg: #EB6D77
+#endif
+
+link-fg: $gray1
+link-darker-fg: $gray1
+link-service-fg: #45993d
+link-underline: $gray1,25%
+link-hover-underline: $gray1,80%
+#if WINDOWS|LINUX
+  input-search-placeholder-fg: #c3c3c2
+  input-search-bg: #5b5953
+#else
+  input-search-placeholder-fg: $gray2
+  input-search-bg: $black1
+#endif
+input-search-icon: #c3c3c2
+input-search-clear-icon: $gray2
+input-bg: $gray
+input-placeholder-fg: #9ba1ae
+textarea-border: $gray2
+empty-placeholder-fg: $light-gray
+
+button-fg: $white
+button-bg: $gray1
+button-hover-bg: $gray1,85%
+button-hover-fg: $white,92%
+button-active-bg: $gray1,70%
+button-active-fg: $white,84%
+
+button-spinner-bg: $light-gray1,60% // mac, linux
+button-spinner-fg: $light-gray1
+
+#if LINUX
+  buttonlight-fg: $gray1
+  buttonlight-bg: transparent
+  buttonlight-hover-bg: $gray
+  buttonlight-active-bg: $gray,70%
+  buttonwide-fg: $white
+  buttonwide-bg: #5181b8
+  buttonwide-hover-bg: #5181b8,85%
+  buttonwide-active-bg: #5181b8,70%
+#elif WINDOWS
+  buttonlight-fg: $gray1
+  buttonlight-bg: transparent
+  buttonlight-hover-bg: $gray
+  buttonlight-active-bg: $gray,70%
+  buttonwide-fg: $white
+  buttonwide-bg: #5181b8
+  buttonwide-hover-bg: #5181b8,85%
+  buttonwide-active-bg: #5181b8,70%
+#elif MACOS
+  buttonlight-fg: $gray1
+  buttonlight-bg: transparent
+  buttonlight-hover-bg: $gray
+  buttonlight-active-bg: $gray,70%
+  buttonwide-fg: $white
+  buttonwide-bg: #5181b8
+  buttonwide-hover-bg: #5181b8,85%
+  buttonwide-active-bg: #5181b8,70%
+#endif
+
+tt-bg: $light-gray1,90%
+tt-fg: $black2
+tt-arrow-icon: $light-gray1,90%
+tt-audio-fg: $black2
+tt-audio-bg: $light-gray1,90%
+tt-audio-arrow-icon: $light-gray1,90%
+
+layer-bg: $light-gray1,15%
+layer-box-bg: $black2
+layer-box-close-icon: $light-gray1
+layer-box-close-icon-hover: $light-gray1,70%
+layer-box-shadow: $black,12%
+layer-loading-bg: $light-gray1,45%
+layer-loading-spinner-bg: $light-gray1
+layer-box-header-bg: $black
+layer-box-header-border: $gray2,75%
+mbox-subtitle-fg: #8f9295
+mbox-text-fg: $light-gray
+about-title-fg: $light-gray1
+about-version-fg: $light-gray
+about-text-fg: $light-gray1
+about-bullet-fg: $light-gray
+update-button-downloading-bg: $gray
+update-button-downloading-fg: $light-gray1
+update-button-progress-bg: $gray1,35%
+update-version-fg: $light-gray
+
+dialogitem-bg: $black1
+dialogitem-hover-bg: $gray
+dialogitem-selected-bg: $gray1
+dialogitem-name-fg: $light-gray1
+dialogitem-online-bg: #71cb50
+dialogitem-selected-name-fg: #fff
+dialogitem-message-fg: $light-gray
+dialogitem-selected-message-fg: $light-gray1
+dialogitem-date-fg: $light-gray
+dialogitem-selected-date-fg: $light-gray1
+dialogitem-message-out-fg: $gray1
+dialogitem-selected-message-out-fg: #fff,80%
+dialogitem-badge-bg: $gray1
+dialogitem-badge-fg: $black2
+dialogitem-selected-badge-bg: $white
+dialogitem-selected-badge-fg: $gray1
+dialogitem-outbadge-bg: $gray1
+dialogitem-outbadge-fg: $light-gray1
+dialogitem-muted-badge-bg: #df501e // #8995AE
+dialogitem-selected-verified-icon: $white
+dialogitem-muted-icon: $light-gray1,30%
+dialogitem-delete-icon: $gray1
+dialogitem-delete-icon-hover: $gray1,70%
+dialogitem-selected-delete-icon: $light-gray1
+dialogitem-selected-delete-icon-hover: $light-gray1,70%
+dialogitem-selected-muted-icon: $light-gray1
+dialogitem-important-icon: $light-gray1,30%
+dialogitem-selected-important-icon: $light-gray1
+dialogitem-sending-icon: $gray1
+dialogitem-selected-sending-icon: $light-gray1
+dialogitem-selected-initialsavatar-bg: $black2,60%
+dialogitem-selected-initialsavatar-fg: $gray2
+
+header-border: $gray2
+header-title: $light-gray1
+header-close-fg: $gray1
+header-back-fg: $gray1
+header-back-icon: $gray1
+header-input-search-placeholder-fg: $gray2
+header-remove-selection-icon: $gray1
+header-remove-selection-icon-hover: $gray1,70%
+header-4state-icon: $gray1
+header-4state-icon-hover: $gray1,60%
+header-4state-active-icon: $gray1,60%
+header-4state-active-icon-hover: $gray1,60%
+
+left-border: $gray2
+left-empty-title-fg: $light-gray
+right-empty-text-fg: $light-gray
+right-big-text-fg: $light-gray // forward, dnd
+left-empty-text-fg: $light-gray
+right-empty-vk-icon: $gray1,20%
+
+info-icon: $gray1
+info-subtitle-fg: $light-gray1
+info-name-edit-icon: $gray1
+info-name-edit-icon-hover: $gray1,65%
+info-name-input-border-bottom: $gray2
+info-chat-image-overlay-bg: $black,50%
+info-chat-image-placeholder-bg: $gray
+info-chat-image-placeholder-border: $gray
+info-chat-image-placeholder-icon: #a5b4c5
+info-chat-image-change-icon: $white
+info-list-item-hover-bg: $gray
+info-list-leave-fg: #DC5151
+info-list-return-fg: #309648
+info-attaches-select-arrow-icon: $light-gray
+info-attaches-select-active-arrow-icon: $light-gray
+info-attaches-empty-placeholder-fg: $light-gray
+info-attaches-link-letter-bg: $gray
+info-attaches-link-letter-fg: $light-gray1
+
+info-members-add-participant-selected-checkbox: $gray1
+info-members-add-participant-unselected-checkbox: $gray2
+
+dialog-input-bg: $black2
+dialog-input-ta-bg: $black2
+dialog-input-ta-border: $gray2
+dialog-input-ta-empty-fg: #c3c3c2
+#if MACOS
+  dialog-input-send-icon-fg: $white
+  dialog-input-send-icon-bg: $gray1
+  dialog-input-send-icon-hover-bg: $gray1,80%
+#else
+  dialog-input-send-icon: $gray1
+  dialog-input-send-inactive-icon: $gray1
+  dialog-input-send-active-icon: $gray1
+  dialog-input-send-mic-icon: $gray1
+  dialog-input-send-mic-icon-hover: $gray1,70%
+#endif
+dialog-input-audio-rec-dur-fg: $black2
+dialog-input-audio-rec-playpause-icon: $light-gray1
+dialog-input-audio-wave-bg: $gray
+dialog-input-attaches-shadow: $black,40% // inner shadow after scrolling
+dialog-input-attach-remove-bg: $white,50%
+dialog-input-attach-remove-hover-bg: $white,70%
+dialog-input-attach-remove-icon: $black2
+dialog-input-attach-bg: $gray
+dialog-input-attach-file-name-fg: $light-gray1
+dialog-input-attach-file-size-fg: $light-gray
+dialog-input-attach-doc-upload-bg: $white,30%
+dialog-input-attach-doc-upload-progress-bg: $gray1
+dialog-input-attach-doc-remove-bg: $gray1,30%
+dialog-input-attach-doc-remove-hover-bg: $gray1,45%
+dialog-input-attach-doc-icon: $light-gray1
+
+dialog-input-attach-audio-dur-fg: $light-gray
+dialog-input-attach-fwd-line-bg: $gray2
+dialog-input-attach-progress-wrap-bg: $black,15%
+dialog-input-attach-image-bg: $gray
+dialog-input-attach-audio-hover-bg: $gray
+dialog-input-attach-geo-remove-bg: $white,50%
+dialog-input-attach-geo-remove-hover-bg: $white,70%
+dialog-input-mentions-list-shadow: $black,5% // top shadow
+
+dialog-input-keyboard-default-bg: #394050
+dialog-input-keyboard-default-fg: $white,90%
+dialog-input-keyboard-default-border: #394050
+dialog-input-keyboard-default-hover-bg: #333947
+dialog-input-keyboard-default-hover-border: #333947
+
+dialog-input-keyboard-negative-bg: #e76666
+dialog-input-keyboard-negative-fg: $white,90%
+dialog-input-keyboard-negative-border: #d45d5d
+dialog-input-keyboard-negative-hover-bg: #d95f5f
+dialog-input-keyboard-negative-hover-border: #d95f5f
+
+dialog-input-keyboard-positive-bg: #63b963
+dialog-input-keyboard-positive-fg: $white,90%
+dialog-input-keyboard-positive-border: #63b963
+dialog-input-keyboard-positive-hover-bg: #5cab5c
+dialog-input-keyboard-positive-hover-border: #5cab5c
+
+dialog-input-keyboard-primary-bg: #5181b8
+dialog-input-keyboard-primary-fg: $white,90%
+dialog-input-keyboard-primary-border: #5181b8
+dialog-input-keyboard-primary-hover-bg: #4a76a8
+dialog-input-keyboard-primary-hover-border: #4a76a8
+
+dialog-header-back-badge-fg: $white
+dialog-header-back-badge-bg: $gray2
+dialog-typing-text-fg: $light-gray
+dialog-typing-point-icon: $light-gray
+dialog-typing-point-active-icon: $light-gray
+dialog-messages-error-icon: $gray
+dialog-messages-date-bg: $gray
+dialog-messages-date-fg: $light-gray1
+dialog-messages-date-shadow: transparent
+#if MACOS
+  dialog-messages-date-border: $gray
+#endif
+dialog-messages-load-error-big-title-fg: $light-gray
+dialog-messages-new-line-bg: $gray2
+dialog-history-end-button-shadow: $black,13%
+dialog-history-end-button-border: $gray2
+dialog-history-end-button-hover-border: $gray2
+dialog-history-end-button-bg: $black2
+dialog-history-end-button-hover-bg: $black1
+dialog-history-end-button-badge-bg: $gray2
+dialog-history-end-button-badge-fg: $black2
+dialog-history-end-button-icon: $gray1
+dialog-history-end-button-icon-hover: $gray1,80%
+dialog-pinned-shadow: $black,0%
+dialog-pinned-icon: $gray1,70%
+dialog-search-message-arrow-icon: $light-gray
+dialog-message-unread-bg: #4D4D4D
+dialog-message-hover-bg: $gray
+dialog-message-photo-bg: $black
+dialog-message-gift-bg: $black2
+dialog-message-gift-time-fg: $light-gray
+dialog-message-gift-text-fg: $light-gray1
+dialog-message-selected-bg: #777
+dialog-message-gift-selected-bg: #2c3242
+dialog-message-select-icon: $gray1
+dialog-message-select-hover-icon: $gray
+dialog-message-selected-select-icon: $gray2
+dialog-message-gift-select-icon: $gray1,25%
+dialog-message-gift-selected-select-icon: $gray2
+dialog-message-icon: $gray2
+dialog-message-icon-hover: $gray //?
+dialog-forwarded-line: $gray2
+
+attach-upload-progress-cancel-bg: $white,10%
+attach-upload-progress-retry-bg: $white,50%
+attach-upload-progress-cancel-icon: $white,70%
+attach-upload-progress-cancel-icon-hover: $white
+attach-photo-bg: $black2
+attach-photo-upload-progress-bg: $black,15%
+attach-photo-upload-cancel-icon: $white,50%
+attach-doc-bg: $black
+attach-doc-loader-bg: $black,50%
+attach-doc-image-info-fg: $white
+attach-doc-image-info-bg: $black,40%
+attach-doc-image-gift-mark-fg: $white
+attach-doc-image-gift-mark-bg: $black,40%
+attach-doc-image-upload-progress-bg: $black,15%
+attach-doc-title-fg: $white
+attach-doc-title-bg: $black,40%
+attach-doc-file-upload-bg: $light-gray1,30%
+attach-doc-file-upload-progress-bg: $gray2
+attach-doc-audio-upload-progress-bg: $gray1
+attach-doc-audio-upload-progress-retry-bg: $gray1
+attach-link-border: $gray2
+attach-link-text-fg: $light-gray
+attach-link-image-border: $black,12%
+attach-url-rounded-fg: $white
+attach-url-rounded-bg: $black,40%
+attach-wall-border: $gray2
+attach-audio-play-icon-bg: $gray2
+attach-audio-play-icon-fg: $white
+attach-audio-hover-bg: $gray
+attach-audio-unreadmessage-hover-bg: $gray,50%
+attach-audio-bar-full-bg: $light-gray1,30%
+attach-audio-unreadmessage-bar-full-bg: $light-gray1,30%
+attach-audio-bar-buffered-bg: $gray1,50%
+attach-audio-unreadmessage-bar-buffered-bg: $gray1,50%
+attach-audio-bar-progress-bg: $light-gray
+attach-audio-bar-slider-bg: $light-gray1
+attach-video-play-icon: $white
+attach-video-dur-fg: $white
+attach-video-dur-bg: $black,40%
+attach-snapster-over-label-fg: $white
+attach-money-transfer-from-fg: $light-gray
+attach-money-transfer-left-rub-border: $black,6%
+attach-market-border: $black,15%
+attach-market-desc-fg: $light-gray
+attach-answered-poll-answer-bg: $gray
+attach-answered-poll-answer-rate-bg: $gray1
+attach-answered-poll-my-answer-fg: $white
+attach-album-name-textshadow: $black,25%
+attach-album-author-textshadow: $black,20%
+attach-album-name-fg: $white
+attach-album-author-fg: $white
+attach-playlist-default-cover-fg: $gray1
+attach-playlist-default-cover-bg: $gray
+attach-playlist-head-info-button-fg: $light-gray1
+attach-playlist-head-info-button-hover-fg: $black2
+attach-playlist-showall-hover-bg: $gray
+attach-playlist-play-icon: $white
+attach-gift-image-shadow: $black,8%
+
+photos-button-fg: $light-gray1
+photos-button-bg: $gray
+photos-button-icon: $light-gray1
+photos-result-send-fg: $gray1
+photos-photo-overlay-bg: $white
+photos-selected-icon-fg: $gray1
+photos-selected-icon-bg: $white
+photos-webcam-icon-bg: #f74842
+photos-webcam-icon-fg: $white
+photos-webcam-bg: $black
+photos-webcam-placeholder-bg: $black
+photos-webcam-placeholder-fg: $light-gray1
+photos-webcam-spinner-color: $light-gray
+photos-webcam-attach-button-bg: #5181b8
+photos-webcam-attach-button-fg: $white
+photos-webcam-attach-button-active-bg: #5181b8,80%
+photos-webcam-timer-second-fg: #f74842
+photos-album-icon-bg: $gray
+photos-album-icon-fg: $gray1
+photos-album-icon-hover-bg: $gray
+docs-item-line-bg: $gray2
+
+//
+// context menus
+//
+#if LINUX
+  context-menu-border: $gray2
+  context-menu-item-hover-bg: $gray
+  context-menu-item-count-bg: $gray
+  context-menu-item-count-fg: $light-gray1
+  context-menu-item-hover-count-bg: $gray
+  context-menu-item-hover-count-fg: $light-gray1
+  dialog-menu-item-hover-bg: $gray // for attaches menu
+#elif WINDOWS
+  context-menu-bg: $black2
+  context-menu-border: $gray2
+  context-menu-item-hover-bg: $gray
+  context-menu-item-count-bg: $gray
+  context-menu-item-count-fg: $light-gray1
+  context-menu-item-hover-count-bg: $gray
+  context-menu-item-hover-count-fg: $light-gray1
+#elif MACOS
+  context-menu-border: $gray2
+  context-menu-item-fg: $light-gray1
+  context-menu-item-hover-bg: $gray
+  context-menu-item-hover-fg: $light-gray1
+  context-menu-item-icon-hover-fg: $gray1
+  context-menu-item-count-bg: $gray
+  context-menu-item-count-fg: $light-gray1
+  context-menu-item-hover-count-bg: $gray
+  context-menu-item-hover-count-fg: $light-gray1
+#endif
+
+context-menu-arrow-icon: $light-gray
+main-menu-section-fg: #969da2 // not used
+main-menu-update-icon-bg: $gray
+main-menu-update-icon-fg: $gray1
+
+popover-bg: $black2
+popover-border: $gray2
+popover-shadow: $black2,20%
+
+calendar-bg: $black
+calendar-arrow-icon: $light-gray1
+calendar-border: $gray2
+calendar-header-bg: $gray1
+calendar-header-fg: $white
+calendar-dow-fg: $light-gray
+calendar-dow-bg: #2c3242 // 10% of $gray1
+calendar-cell-selected-border: $gray2
+calendar-cell-selected-bg: $gray2
+calendar-reset-bg: #2c3242 // 10% of $gray1
+calendar-reset-fg: $gray1
+
+compose-dialogitem-icon: $light-gray
+compose-dialogitem-selected-icon: $light-gray1
+compose-to-fg: $light-gray
+compose-count-fg: $light-gray
+compose-chat-icon-bg: $gray
+compose-chat-icon-fg: $gray1
+compose-chat-line-input-placeholder-fg: $gray2
+compose-user-line-image-change-bg: $black,50%
+compose-filter-user-hover-bg: $gray
+compose-filter-user-name-fg: $light-gray1
+compose-tag-bg: $gray
+compose-tag-fg: $light-gray1
+compose-tag-remove-icon: $gray1
+compose-tag-remove-icon-hover: $gray1,70%
+
+toast-link-fg: #916108
+toast-yellow-bg: #f7c360
+toast-yellow-fg: $white
+toast-green-bg: #47be5b
+toast-green-fg: $white
+toast-message-bg: #e4ebf5
+toast-message-fg: #67788a
+
+audioplayer-progress-full-bg: $light-gray1,30%
+audioplayer-progress-buffered-bg: $gray1,50%
+audioplayer-progress-value-bg: $light-gray
+audioplayer-slider-bg: $light-gray1
+
+communities-icon: $gray1
+communities-icon-hover: $gray1,70%
+
+accpanel-bg: $black
+accpanel-border-right: $gray2
+accpanel-sep-border-bottom: $light-gray1,30%
+accpanel-cur-icon: $gray1
+accpanel-badge-fg: $white
+accpanel-badge-bg: #df4444
+accpanel-graybadge-bg: #9ea6ad
+accpanel-dimmed-bg: $black,15%
+accpanel-dimmed-badge-border: #cacccc
+accpanel-add-bg: $gray
+accpanel-add-fg: $gray1
+accpanel-add-hover-bg: $gray1
+accpanel-add-hover-fg: $gray2
+
+group-ban-user-status-fg: $light-gray
+chatlink-reset-bg: $gray
+chatlink-reset-fg: $light-gray1
+
+dnd-border-color: $gray2
+dnd-active-bg: $gray
+dnd-icon: $gray1
+initials-avatar-fg: $white
+captcha-bg: $black2
+spinner-bg: $gray1
+spinner-monochrome-bg: $black2
+
+#if WINDOWS|LINUX
+  toggle-bg: $gray1,30%
+  toggle-slider-bg: $black2
+  toggle-enabled-bg: $gray2
+  toggle-disabled-bg: #ccc
+  toggle-enabled-slider-bg: $light-gray1
+#elif MACOS
+  toggle-bg: $gray
+  toggle-slider-border: $gray2
+  toggle-slider-bg: $black
+  toggle-enabled-bg: $gray
+  toggle-enabled-slider-bg: $gray1
+#endif
+
+radio-hover-bg: $gray2
+radio-border: $gray2
+radio-selected-border: $gray2
+radio-selected-fg: $gray1
+checkbox-border: $gray2
+checkbox-bg: $gray1
+checkbox-checked-bg: $gray2
+dropdown-items-bg: $black2
+dropdown-items-border: $gray2
+dropdown-shadow: $black,10%
+dropdown-item-hover-bg: $gray
+componentimage-bg: $black
+
+login-title-fg: $light-gray1
+login-footer-link-fg: $light-gray1,80%
+#if WINDOWS|LINUX
+  login-error-fg: #df4444
+  login-input-border: $gray
+  login-input-bg: $gray
+  login-input-fg: $light-gray1
+  login-input-focus-border: $gray
+  login-input-error-border: #df4444
+#elif MACOS
+  login-error-fg: #df4444
+  login-input-border: $gray
+  login-input-bg: $gray
+  login-input-fg: $light-gray1
+  login-input-focus-border: $gray1
+  login-input-error-border: #df4444
+#endif
+login-resend-timer-fg: $light-gray
+login-validation-input-border: $light-gray
+login-settings-border: transparent
+login-settings-shadow: $black,10%
+login-settings-hover-shadow: transparent
+login-settings-hover-border: transparent
+login-icons: $gray1 // show-password, hide-password, settings
+login-icons-hover: $gray1,70%
+
+settings-tab-fg: $light-gray
+settings-tab-active-fg: $light-gray1
+settings-tab-underline-bg: $gray1
+settings-profile-userpic-uploading-bg: $black,50%
+settings-profile-userpic-uploading-spinner-bg: $black2,25%
+settings-profile-userpic-uploading-spinner-fg: $white
+settings-separator-bg: $gray2
+settings-line-left-fg: $light-gray
+settings-line-editing-bg: $black1
+settings-line-link-red-fg: #ff3a30
+settings-line-toggle-label-fg: $light-gray
+settings-secondlevel-line-border: $gray2
+settings-notifications-community-badge-fg: $light-gray
+settings-buttonlight-hover-bg: $gray
+settings-block-title-fg: #7e8081
+settings-scale-fg: $gray1
+settings-scale-bg: $gray
+settings-scale-hover-bg: $gray
+settings-scale-selected-bg: $gray1
+
+smiles-box-bg: $black
+smiles-box-border: $gray2
+smiles-box-shadow: $black,10%
+smiles-box-smile-hover-bg: $black,25%
+smiles-box-section-header-fg: $light-gray
+smiles-box-tabs-border: $gray2
+smiles-box-tab-active-bg: $gray2
+smiles-box-tab-active-fg: $light-gray1
+smiles-box-icon-normal: $gray1
+smiles-box-icon-hover: $gray1,80%
+smiles-box-icon-active: $gray1,60%
